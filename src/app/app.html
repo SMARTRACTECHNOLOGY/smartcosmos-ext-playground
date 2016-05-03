@@ -1,0 +1,13 @@
+<header>
+  <nav>
+    <a [routerLink]="['Home']">Home</a>
+    <a [routerLink]="['About']">About</a>
+  </nav>
+</header>
+<main>
+  <h1 class="title">{{api.title}}</h1>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <a [href]="url">Footer</a>
+</footer>
