@@ -30,7 +30,7 @@ describe('App', () => {
   ]);
 
   it('should have an url', inject([App], (app: App) => {
-    expect(app.url).toEqual('https://github.com/SMARTRACTECHNOLOGY/smartcosmos-ext-playground');
+    expect(app.github).toEqual('https://github.com/SMARTRACTECHNOLOGY/smartcosmos-ext-playground');
   }));
 
 });

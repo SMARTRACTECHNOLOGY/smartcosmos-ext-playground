@@ -128,7 +128,7 @@ We have good experience using these editors:
 
 * https://code.visualstudio.com/[Visual Studio Code]
 * https://www.jetbrains.com/webstorm/download/[Webstorm 11+]
-* https://atom.io/[Atom] with https://atom.io/packages/atom-typescript[TypeScript plugin]
+* https://atom.io/[Atom] with https://atom.io/packages/atom-typescript[TypeScript plugin] and https://atom.io/packages/linter-tslint[linter-tslint]
 * http://www.sublimetext.com/3[Sublime Text] with https://github.com/Microsoft/Typescript-Sublime-plugin#installation[Typescript-Sublime-Plugin]
 
 # License

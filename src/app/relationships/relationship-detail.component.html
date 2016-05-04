@@ -1,0 +1,9 @@
+<div *ngIf="thing" class="card">
+  <div class="card-block">
+    <h4 class="card-title">{{relationship.type}}</h4>
+    <p class="card-text">
+      <span *ngIf="relationship.reference">{{relationship.reference.name}}</span><span *ngIf="relationship.reference == null">{{relationship.referenceUrn}}</span> {{relationship.type}}
+      <span *ngIf="relationship.relatedReference">{{relationship.relatedReference.name}}</span><span *ngIf="relationship.relatedReference == null">{{relationship.relatedReferenceUrn}}</span>.
+    </p>
+  </div>
+</div>

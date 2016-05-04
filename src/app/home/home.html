@@ -1,0 +1,7 @@
+<h1>Home</h1>
+<div class="card-columns">
+<sc-thing-detail [thing]="thing" *ngFor="#thing of things" [class.selected-thing]="thing === selectedThing" (click)="onSelect(thing)">
+</sc-thing-detail>
+</div>
+
+<sc-thing-detail [thing]="selectedThing"></sc-thing-detail>
