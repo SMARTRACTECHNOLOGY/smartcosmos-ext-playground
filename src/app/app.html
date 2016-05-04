@@ -1,13 +1,27 @@
-<header>
-  <nav>
-    <a [routerLink]="['Home']">Home</a>
-    <a [routerLink]="['About']">About</a>
-  </nav>
-</header>
-<main>
-  <h1 class="title">{{api.title}}</h1>
+<nav class="navbar navbar-full navbar-dark bg-primary">
+  <div class="nav navbar-nav">
+    <a class="navbar-brand logo" [routerLink]="['Home']"></a>
+    <a class="nav-item nav-link" [routerLink]="['Home']">Home</a>
+    <a class="nav-item nav-link" [routerLink]="['About']">About</a>
+  </div>
+</nav>
+
+<main class="container">
   <router-outlet></router-outlet>
 </main>
-<footer>
-  <a [href]="url">Footer</a>
+<footer class="sc-footer text-muted navbar-fixed-bottom" role="contentinfo">
+  <div class="container">
+    <ul class="sc-footer-links">
+      <li><a target="_blank" href="https://www.smart-cosmos.com/contact.html">Contact</a></li>
+      <li><a target="_blank" href="https://www.smart-cosmos.com/privacy.html">Privacy</a></li>
+      <li><a href="https://www.facebook.com/SMARTRACTECHNOLOGY" target="_blank">Facebook</a></li>
+      <li><a href="https://twitter.com/SMARTRAC_NV" target="_blank">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/company/smartrac-technology" target="_blank">LinkedIn</a></li>
+      <li><a [href]="url">GitHub</a></li>
+    </ul>
+    <p>Created as a small place to play around with the Objects v3 system and provide better visuals into the power of SMART COSMOS.</p>
+    <p>Currently v{{ api.current_version }}. Code licensed <a rel="license" href="https://github.com/SMARTRACTECHNOLOGY/smartcosmos-ext-playground/blob/master/LICENSE" target="_blank">Apache 2.0</a>.</p>
+  </div>
+
+
 </footer>

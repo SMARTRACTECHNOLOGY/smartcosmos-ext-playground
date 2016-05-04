@@ -25,7 +25,7 @@ import {About} from "./components/about/about";
   {path: '/About', component: About, name: 'About'}
 ])
 export class App {
-  url: string = 'https://github.com/SMARTRACTECHNOLOGY/smartcosmos-framework';
+  url: string = 'https://github.com/SMARTRACTECHNOLOGY/smartcosmos-ext-playground';
 
   constructor(public api: Api) {
   }

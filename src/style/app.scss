@@ -1,11 +1,10 @@
 // styles in src/style directory are applied to the whole page
 //
-@import "bootstrap/scss/bootstrap-flex";
+// Overrides default Bootstrap behavior with custom coloring.
+@import "variables";
+@import "bootstrap-variables";
 
-body {
-    background: #414042;
-    color: #fff;
-}
-a {
-    color: #03A9F4;
-}
+@import "bootstrap/scss/bootstrap";
+
+@import "footer";
+@import "logo";
