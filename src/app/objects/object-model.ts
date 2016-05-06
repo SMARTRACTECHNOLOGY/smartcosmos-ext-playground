@@ -1,6 +1,6 @@
 
 
-export class Thing {
+export class ObjectModel {
 
   urn: string;
   objectUrn: string;

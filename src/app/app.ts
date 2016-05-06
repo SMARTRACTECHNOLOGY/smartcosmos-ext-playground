@@ -4,9 +4,10 @@ import {FORM_PROVIDERS} from 'angular2/common';
 
 import '../style/app.scss';
 
-import {Api} from './services/api/api';
+import {Api} from './api/api';
 import {Home} from './home/home';
-import {About} from "./about/about";
+import {Objects} from './objects/objects';
+import {Relationships} from './relationships/relationships';
 
 /*
  * App Component
@@ -21,8 +22,9 @@ import {About} from "./about/about";
   template: require('./app.html')
 })
 @RouteConfig([
-  {path: '/home', component: Home, name: 'Home', useAsDefault: true},
-  {path: '/about', component: About, name: 'About'}
+  { path: '/', component: Home, name: 'Home', useAsDefault: true },
+  { path: '/objects', component: Objects, name: 'Objects' },
+  { path: '/relationships', component: Relationships, name: 'Relationships' }
 ])
 export class App {
   github: string = 'https://github.com/SMARTRACTECHNOLOGY/smartcosmos-ext-playground';

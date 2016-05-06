@@ -1,0 +1,8 @@
+<h1>Objects</h1>
+<p>Objects are a critical element in SMART COSMOS Objects. To put it simply, objects present things both tangible and intangible -- your car is an object because it presents a unique thing only one of which exists in the world. However, your car also represents
+  a model of a car, and this model can shared among thousands of other cars.</p>
+  <p>Objects by themselves are not very interesting.  Each object has a <strong>type</strong> and <strong>name</strong> not necessarily unique to that object, which assists in grouping and classifying different objects.</p>
+<div class="card-columns">
+  <sc-object-detail [object]="object" *ngFor="#object of objects" [class.selected-object]="object === selectedObject" (click)="onSelect(object)">
+  </sc-object-detail>
+</div>

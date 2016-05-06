@@ -6,7 +6,7 @@ import {RELATIONSHIPS} from './mock-relationships';
  * @return {RelationshipRdaoService} service for handling data operations.
  */
 @Injectable()
-export class RelationshipRdaoService {
+export class RelationshipsRdaoService {
   /**
    * [getRelationships description]
    * @return {Relationship array} [description]

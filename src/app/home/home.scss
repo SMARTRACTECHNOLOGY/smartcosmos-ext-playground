@@ -1,4 +1,13 @@
 // component styles are encapsulated and only applied to their components
-.selected-thing {
-  background: rgb(156, 8, 145) !important;
+//
+
+// Unfortunately, you have to repeat all imports.  If something needs third party
+//  libraries you are probably better off making it a global style.
+@import '../../style/variables';
+
+.home-image {
+  background: url('#{$assets}/img/smartcosmos-globe.svg') no-repeat left center;
+  background-size: contain;
+  height: 150px;
+  margin: 20px auto;
 }

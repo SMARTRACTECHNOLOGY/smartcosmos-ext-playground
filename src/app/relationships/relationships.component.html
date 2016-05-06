@@ -1,0 +1,7 @@
+<h1>Relationships</h1>
+<p>Relationships are the ability to capture "yes or no" relationship status between arbitrary objects.</p>
+  <p>Much like Objects, Relationships by themselves are not fairly interesting.  They deal with cryptic links between unknown identifiers, that fails to apply much meaning to our everyday lives.</p>
+<div class="card-columns">
+  <sc-relationship-detail [object]="object" *ngFor="#object of objects" [class.selected-object]="object === selectedObject" (click)="onSelect(object)">
+  </sc-relationship-detail>
+</div>

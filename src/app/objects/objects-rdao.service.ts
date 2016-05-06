@@ -1,5 +1,5 @@
 import {Injectable} from 'angular2/core';
-import {THINGS} from './mock-things';
+import {OBJECTS} from './mock-objects';
 
 /**
  * The Objects RDAO Service handles the basic CRUD operations for Objects.
@@ -12,6 +12,15 @@ export class ObjectsRdaoService {
    * @return {[type]} [description]
    */
   getObjects() {
-    return Promise.resolve(THINGS);
+
+    var keys = Object.keys(OBJECTS);
+
+    var values = keys.map(function(v) { return OBJECTS[v]; });
+
+    return Promise.resolve(values);
+  }
+
+  getObject(objectUrn: string) {
+    return Promise.resolve(OBJECTS[objectUrn]);
   }
 }
